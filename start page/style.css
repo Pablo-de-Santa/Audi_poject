@@ -1,0 +1,316 @@
+/*loader*/
+
+body {
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+  margin: 0;
+  text-align: center;
+}
+.wrapper {    
+  left: 0;
+  height: 50px;
+  margin-top: calc(50vh - 25px);
+  margin-left: calc(50vw - 100px);
+  position: fixed;
+  top: 0;
+  width: 180px;
+  z-index: 10;
+}
+
+.loader-section {
+position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: black;
+  z-index: 9;
+}
+
+
+.loader-section.section-left {
+  left: 0;
+}
+
+.loader-section.section-right {
+  right: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 3px silver solid;
+  display: inline-block;
+  height: 50px;
+  margin: -5.5%;
+  width: 50px;
+}
+  .circle-1 {
+    animation: fade 1.3s ease-in-out infinite alternate;
+  }
+
+  .circle-2 {
+    animation: fade 1.3s ease-in-out infinite alternate;
+    animation-delay: 0.1s;
+  }
+  .circle-3 {
+    animation: fade 1.3s ease-in-out infinite alternate;
+    animation-delay: 0.2s;
+  }
+  .circle-4 {
+    animation: fade 1.3s ease-in-out infinite alternate;
+    animation-delay: 0.3s;
+  }
+
+
+#content {
+color: red;
+z-index: 10;
+}
+
+.hidden {
+display: none;
+
+}
+
+h1 {
+color: silver;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 0.05em;
+margin: 40px auto;
+text-transform: uppercase;
+}
+
+.loader-wrapper.loaded .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+ .loader-wrapper.loaded .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loader-wrapper.loaded .wrapper .circle,
+.loader-wrapper.loaded h1{
+  display: none;
+}
+
+@keyframes fade {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+#for_loader {
+  color: white;
+}
+
+/*end of a loader*/
+
+
+/*main content*/
+
+.logo_center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 65%; 
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.circle1 {
+  border-radius: 250px/250px;
+  border: solid 15px silver;
+  width: 250px;
+  height: 250px;
+  position: absolute; 
+  margin-left: 195px;
+  -webkit-transition: border 0.3s ease-out;
+  -moz-transition: border 0.3s ease-out;
+  -o-transition: border 0.3s ease-out;
+  transition: border 0.3s ease-out;
+}
+
+.circle1:hover{
+  border: 20px solid DimGray;
+  cursor: pointer;
+}
+
+.circle1:active {
+  border: 20px solid red;
+}
+
+.circle2 {
+  border-radius: 250px/250px;
+  border: solid 15px silver;
+  width: 250px;
+  height: 250px;
+  position: absolute; 
+  margin-left: 390px;
+  -webkit-transition: border 0.3s ease-out;
+  -moz-transition: border 0.3s ease-out;
+  -o-transition: border 0.3s ease-out;
+  transition: border 0.3s ease-out;
+}
+
+.circle2:hover{
+  border: 20px solid DimGray;
+  cursor: pointer;
+}
+
+.circle2:active {
+  border: 20px solid red;
+}
+
+.circle3 {
+  border-radius: 250px/250px;
+  border: solid 15px silver;
+  width: 250px;
+  height: 250px;
+  position: absolute; 
+  margin-left: 570px;
+  -webkit-transition: border 0.3s ease-out;
+  -moz-transition: border 0.3s ease-out;
+  -o-transition: border 0.3s ease-out;
+  transition: border 0.3s ease-out;
+}
+
+.circle3:hover{
+  border: 20px solid DimGray;
+  cursor: pointer;
+}
+
+.circle3:active {
+  border: 20px solid red;
+}
+
+.circle4 {
+  border-radius: 250px/250px;
+  border: solid 15px silver;
+  width: 250px;
+  height: 250px;
+  position: absolute; 
+  -webkit-transition: border 0.3s ease-out;
+  -moz-transition: border 0.3s ease-out;
+  -o-transition: border 0.3s ease-out;
+  transition: border 0.3s ease-out;
+}
+
+.circle4:hover{
+  border: 20px solid DimGray;
+  cursor: pointer;
+}
+
+.circle4:active {
+  border: 20px solid red;
+}
+
+.style_for_audi_link {
+  padding-top: 22%;
+  padding-left: 85%;
+}
+
+.audi_word {
+  color: red;
+  font-family: Century Gothic;
+  font-size: 5em;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  position:absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+a.audi_word:active {
+  color: red;
+}
+
+.audi_word:link {
+  color: red;
+}
+
+.audi_word:hover {
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.audi_word:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 5%;
+  z-index: 10;
+  background-color: red;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.audi_word:hover:before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: grey;
+}
+
+.click_on_rings_label, h1 {
+  color: white;
+  font-family: Century Gothic;
+  text-align: center;
+  margin-top: 7%;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background: black;
+  max-height: 100%;
+  max-width: 100%;
+} 
+
+.nice_words {
+  color: white;
+  padding-top: 120%;
+  padding-left: 2.5%;
+  font-family: Century Gothic;
+  font-size: 1.8em;
+  transition: 0.3s;
+} 
+
+.nice_words:hover {
+  color: DimGray;
+  -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.nice_words:active {
+  color: red;
+}
+
+ #pick_your_ring {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+@media only screen and (max-width:620px) 
+{
+  /* For mobile phones: */
+  body, .logo_center {
+    width: auto;
+  }
+}
+
+
+/*end of a content*/
+
+
