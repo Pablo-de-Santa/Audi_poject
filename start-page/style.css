@@ -65,7 +65,7 @@ body {
   animation-delay: 0.3s;
 }
 
-.container{
+.container {
   /* top and bottom = 0, left and right = auto */
   margin: 0 auto;
   width: 80vw;
@@ -134,7 +134,7 @@ h1 {
   margin-top: 10%;
   position: relative;
   width: 60vw;
-  
+
 }
 
 .circle1,
@@ -152,7 +152,7 @@ h1 {
   transition: border 0.3s ease-out;
 }
 
-.circle1 { 
+.circle1 {
   left: 9%;
   top: 0;
 }
@@ -181,7 +181,7 @@ h1 {
 }
 
 .circle3 {
-  top:0;
+  top: 0;
   left: 45%;
 }
 
@@ -302,9 +302,13 @@ h1 {
   font-size: 25px;
 }
 
- /* Custom, iPhone Retina */ 
- @media only screen and (min-width : 320px) {
-  .circle1, .circle2, .circle3, .circle4 {
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
     border-radius: 72px/72px;
     border: solid 5px silver;
     width: 72px;
@@ -316,7 +320,7 @@ h1 {
     transition: border 0.3s ease-out;
   }
 
-  .logo_center{
+  .logo_center {
     width: 80vw;
   }
 
@@ -329,7 +333,7 @@ h1 {
   }
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .logo_center {
     width: 75vw;
@@ -341,12 +345,15 @@ h1 {
 }
 
 /*landscape orientation*/
-@media (min-width: 500px) and (orientation: landscape) and (max-width : 767px)  {
+@media (min-width: 500px) and (orientation: landscape) and (max-width : 767px) {
   .logo_center {
     width: 47vw;
   }
 
-  .circle1, .circle2, .circle3, .circle4 {
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
     border-radius: 83px/83px;
     border: solid 5px silver;
     width: 83px;
@@ -363,9 +370,13 @@ h1 {
   }
 }
 
- /* Small Devices, Tablets */
- @media only screen and (min-width : 768px) {
-  .circle1, .circle2, .circle3, .circle4 {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
     border-radius: 120px/120px;
     border: solid 5px silver;
     width: 120px;
@@ -384,63 +395,63 @@ h1 {
 
 
 
-  /* Medium Devices, Desktops */
-  @media only screen and (min-width : 992px) {
-    .logo_center {
-      height: 43vh;
-      margin-bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10%;
-      position: relative;
-      width: 83vw;
-    }
-    
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
-      border-radius: 250px/250px;
-      border: solid 15px silver;
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      -webkit-transition: border 0.3s ease-out;
-      -moz-transition: border 0.3s ease-out;
-      -o-transition: border 0.3s ease-out;
-      transition: border 0.3s ease-out;
-    }
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .logo_center {
+    height: 43vh;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 83vw;
   }
 
-  /* Large Devices, Wide Screens */
-  @media only screen and (min-width : 1200px) { 
-    .logo_center {
-      height: 43vh;
-      margin-bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10%;
-      position: relative;
-      width: 60vw;
-      
-    }
-    
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
-      border-radius: 250px/250px;
-      border: solid 15px silver;
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      -webkit-transition: border 0.3s ease-out;
-      -moz-transition: border 0.3s ease-out;
-      -o-transition: border 0.3s ease-out;
-      transition: border 0.3s ease-out;
-    }
-    
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    border-radius: 250px/250px;
+    border: solid 15px silver;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    -webkit-transition: border 0.3s ease-out;
+    -moz-transition: border 0.3s ease-out;
+    -o-transition: border 0.3s ease-out;
+    transition: border 0.3s ease-out;
   }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .logo_center {
+    height: 43vh;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 60vw;
+
+  }
+
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    border-radius: 250px/250px;
+    border: solid 15px silver;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    -webkit-transition: border 0.3s ease-out;
+    -moz-transition: border 0.3s ease-out;
+    -o-transition: border 0.3s ease-out;
+    transition: border 0.3s ease-out;
+  }
+
+}
 
 
 /*end of a content*/
