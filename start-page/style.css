@@ -133,7 +133,7 @@ h1 {
   margin-right: auto;
   margin-top: 10%;
   position: relative;
-  width: 45vw;
+  width: 60vw;
   
 }
 
@@ -149,7 +149,7 @@ h1 {
   -o-transition: border 0.3s ease-out;
   transition: border 0.3s ease-out;
   top: 0;
-  left: 0;
+  left: 9%;
 }
 
 .circle1:hover {
@@ -166,7 +166,7 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
-  left: 25%;
+  left: 27%;
   position: absolute;
   /* margin-left: 390px; */
   -webkit-transition: border 0.3s ease-out;
@@ -190,7 +190,7 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
-  left: 50%;
+  left: 45%;
   position: absolute;
   /* margin-left: 570px; */
   -webkit-transition: border 0.3s ease-out;
@@ -214,7 +214,7 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
-  left: 75%;
+  left: 63%;
   position: absolute;
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
@@ -233,6 +233,8 @@ h1 {
 }
 
 .style_for_audi_link {
+  margin-top: 7%;
+  height: max-content;
   position: relative;
   /* padding-top: 22%;
   padding-left: 85%; */
@@ -247,7 +249,7 @@ h1 {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
   right: 1%;
 }
 
