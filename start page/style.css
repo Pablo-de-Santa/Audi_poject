@@ -122,12 +122,13 @@ h1 {
 /*main content*/
 
 .logo_center {
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-  width: 65%;
-  max-height: 100%;
-  max-width: 100%;
+  position: relative;
+  width: 80vw;
+  
 }
 
 .circle1 {
@@ -136,11 +137,13 @@ h1 {
   width: 250px;
   height: 250px;
   position: absolute;
-  margin-left: 195px;
+  /* margin-left: 195px; */
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
   -o-transition: border 0.3s ease-out;
   transition: border 0.3s ease-out;
+  top: 0;
+  left: 0;
 }
 
 .circle1:hover {
@@ -157,11 +160,13 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
+  left: 25%;
   position: absolute;
-  margin-left: 390px;
+  /* margin-left: 390px; */
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
   -o-transition: border 0.3s ease-out;
+  top: 0;
   transition: border 0.3s ease-out;
 }
 
@@ -179,11 +184,13 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
+  left: 50%;
   position: absolute;
-  margin-left: 570px;
+  /* margin-left: 570px; */
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
   -o-transition: border 0.3s ease-out;
+  top:0;
   transition: border 0.3s ease-out;
 }
 
@@ -201,10 +208,12 @@ h1 {
   border: solid 15px silver;
   width: 250px;
   height: 250px;
+  left: 75%;
   position: absolute;
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
   -o-transition: border 0.3s ease-out;
+  top: 0;
   transition: border 0.3s ease-out;
 }
 
