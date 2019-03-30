@@ -1,10 +1,16 @@
 setTimeout(function(){
     let content = document.getElementById('content');
-    console.log(content);
-    
-  //   This is giving us an array of elements, so we have to choose the first element with index = 0, because we have only one  elemnt with'loader-wrapper' class
+    let wrapper = document.getElementsByClassName('wrapper')[0]
     let loaderWrapper = document.getElementsByClassName('loader-wrapper')[0]
-    console.log(loaderWrapper);
+    let loaderSectionLeft = document.getElementsByClassName('loader-section')[0];
+    let loaderSectionRight = document.getElementsByClassName('loader-section')[1];
+    
+    
+ 
     loaderWrapper.classList.add('loaded');
+    wrapper.classList.add('hidden')
+    loaderSectionRight.classList.add('hiddent');
+    loaderSectionLeft.classList.add('hiddent');
+    
     content.classList.remove('hidden');
   }, 4000);
