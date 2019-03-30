@@ -65,6 +65,11 @@ body {
   animation-delay: 0.3s;
 }
 
+.container{
+  /* top and bottom = 0, left and right = auto */
+  margin: 0 auto;
+  width: 80vw;
+}
 
 #content {
   color: red;
@@ -122,12 +127,13 @@ h1 {
 /*main content*/
 
 .logo_center {
-  height: 100vh;
+  height: 43vh;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   position: relative;
-  width: 80vw;
+  width: 45vw;
   
 }
 
@@ -227,8 +233,9 @@ h1 {
 }
 
 .style_for_audi_link {
-  padding-top: 22%;
-  padding-left: 85%;
+  position: relative;
+  /* padding-top: 22%;
+  padding-left: 85%; */
 }
 
 .audi_word {
@@ -289,13 +296,7 @@ h1 {
   margin-top: 7%;
 }
 
-body {
-  width: auto;
-  height: auto;
-  background: black;
-  max-height: 100%;
-  max-width: 100%;
-}
+
 
 .nice_words {
   color: white;
