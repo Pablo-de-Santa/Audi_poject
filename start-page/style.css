@@ -137,19 +137,24 @@ h1 {
   
 }
 
-.circle1 {
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
   border-radius: 250px/250px;
   border: solid 15px silver;
   width: 250px;
   height: 250px;
   position: absolute;
-  /* margin-left: 195px; */
   -webkit-transition: border 0.3s ease-out;
   -moz-transition: border 0.3s ease-out;
   -o-transition: border 0.3s ease-out;
   transition: border 0.3s ease-out;
-  top: 0;
+}
+
+.circle1 { 
   left: 9%;
+  top: 0;
 }
 
 .circle1:hover {
@@ -162,18 +167,8 @@ h1 {
 }
 
 .circle2 {
-  border-radius: 250px/250px;
-  border: solid 15px silver;
-  width: 250px;
-  height: 250px;
-  left: 27%;
-  position: absolute;
-  /* margin-left: 390px; */
-  -webkit-transition: border 0.3s ease-out;
-  -moz-transition: border 0.3s ease-out;
-  -o-transition: border 0.3s ease-out;
   top: 0;
-  transition: border 0.3s ease-out;
+  left: 27%;
 }
 
 .circle2:hover {
@@ -186,18 +181,8 @@ h1 {
 }
 
 .circle3 {
-  border-radius: 250px/250px;
-  border: solid 15px silver;
-  width: 250px;
-  height: 250px;
-  left: 45%;
-  position: absolute;
-  /* margin-left: 570px; */
-  -webkit-transition: border 0.3s ease-out;
-  -moz-transition: border 0.3s ease-out;
-  -o-transition: border 0.3s ease-out;
   top:0;
-  transition: border 0.3s ease-out;
+  left: 45%;
 }
 
 .circle3:hover {
@@ -210,17 +195,8 @@ h1 {
 }
 
 .circle4 {
-  border-radius: 250px/250px;
-  border: solid 15px silver;
-  width: 250px;
-  height: 250px;
-  left: 63%;
-  position: absolute;
-  -webkit-transition: border 0.3s ease-out;
-  -moz-transition: border 0.3s ease-out;
-  -o-transition: border 0.3s ease-out;
   top: 0;
-  transition: border 0.3s ease-out;
+  left: 63%;
 }
 
 .circle4:hover {
@@ -326,12 +302,30 @@ h1 {
   font-size: 25px;
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:640px) {
 
   /* For mobile phones: */
-  body,
+  /* body,
   .logo_center {
     width: auto;
+  } */
+
+  .circle1, .circle2, .circle3, .circle4 {
+    border-radius: 72px/72px;
+    border: solid 5px silver;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    -webkit-transition: border 0.3s ease-out;
+    -moz-transition: border 0.3s ease-out;
+    -o-transition: border 0.3s ease-out;
+    transition: border 0.3s ease-out;
+  }
+
+
+
+  .logo_center{
+    width: 80vw;
   }
 }
 
