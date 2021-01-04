@@ -1,0 +1,23 @@
+Use global variable - 2%
+Use Comments Throughout - 5%
+Cusom function - 2%
+Use local scope variable - 2%
+Use for statement - 5%
+Access an objects method using dot notation - 2% 
+Access an objects property using dot notation - 2%
+Use an array - 2%
+Custom function with parameters - 5%
+Get element by class name - 5%
+Use logical OR operator - 5% 
+Use if else statement - 5%
+Use if statement - 5%
+Using do while loop - 5%
+Use this - 5%
+Using while loop - 5%
+5% for using logical NOT operator
+5% for using logical AND operator
+Use an Immediately Invoked Function Expression (IFFE) - 10%
+10% for using API
+10% for Jquery plugin
+
+Total: 102%

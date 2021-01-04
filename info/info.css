@@ -1,26 +1,32 @@
 /*HEADER*/
 html {
   scroll-behavior: smooth;
-  width: 100%;
 }
 
+header {
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
 .nav {
   padding-top: 5px;
   background: rgba(0, 0, 0, 0.9);
   max-width: 100%;
-  height: 60px;
+  height: 70px;
   font-size: 40px;
   font-family: 'Gabriola';
   padding-bottom: 5px;
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  width: 100%;
 }
 
 .info {
-  margin-right: 15%;
+  margin-right: 10%;
   margin-left: 4%;
   text-decoration: none;
   color: white;
@@ -108,43 +114,13 @@ html {
   transition: 0.3s;
 }
 
-/*SLIDER*/
+/*AUTO SLIDER*/
 
 /* Slideshow container */
 .slideshow-container {
   max-width: cover;
   position: relative;
   margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 2px 2px 0 solid white;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 2px 0 0 2px solid white;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-
 }
 
 /* Caption text */
@@ -161,7 +137,7 @@ html {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+  display: none;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -171,8 +147,7 @@ html {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active {
   background-color: #717171;
 }
 
@@ -204,6 +179,115 @@ html {
   }
 }
 
+/*Slider*/
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: cover;
+  position: relative;
+  margin: auto;
+}
+
+.dots{
+  display: none;
+}
+
+.img1{
+  filter: brightness(25%);
+-webkit-filter: brightness(25%);
+-moz-filter: brightness(25%);
+-o-filter: brightness(25%);
+-ms-filter: brightness(25%);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot1:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 /*CONTENT*/
 
 .content {
@@ -217,7 +301,6 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-  background: black;
   color: white;
   box-sizing: border-box;
   margin: 25px 20px 25px 0;
@@ -225,19 +308,15 @@ html {
 }
 
 #first_paragraph {
-  width: 33.333%;
-  border-right: 1px solid white;
-  padding: 0 5px;
+  width: 100%;
 }
 
 #second_paragraph {
-  width: 33.333%;
+  width: 100%;
 }
 
 #third_paragraph {
-  width: 33.333%;
-  border-left: 1px solid white;
-  padding: 0 5px;
+  width: 100%;
 }
 
 /*CONTAINER WITH PHOTOS*/
@@ -367,7 +446,7 @@ section {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 5% 0 1% 0;
+  margin: 1% 0 1% 0;
   height: 100%;
 }
 
@@ -412,13 +491,14 @@ h2 {
   background: url('https://i.wheelsage.org/pictures/a/audi/a8_l_3.0_tfsi_quattro/audi_a8_l_3.0_tfsi_quattro_7.jpeg');
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .cover_1 h1 {
   position: relative;
   margin: 0;
   padding: 0;
-  font-size: 10em;
+  font-size: 15em;
   text-transform: uppercase;
   text-align: center;
   background: url('http://ksassets.timeincuk.net/wp/uploads/sites/54/2017/07/new-audi-a8-2046.jpg');
@@ -441,6 +521,22 @@ h2 {
 
 /*Footer*/
 
+
+footer {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  text-align: center;
+  font-family: 'Gabriola', serif;
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
 
 
 /* On smaller screens, decrease text size */
@@ -473,12 +569,8 @@ h2 {
 
 @media (max-width: 480px) {
 
-  header,
-  .info,
-  .new_audi,
-  .used_audi,
-  .photo .audi_logo {
-    width: 25%;
+  .nav {
+    width: 50%;
   }
 
 }
